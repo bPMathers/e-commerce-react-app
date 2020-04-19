@@ -1,3 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CartDropdown component should render CartDropdown component 1`] = `ShallowWrapper {}`;
+exports[`CartDropdown component should render CartDropdown component 1`] = `
+<CartDropdownContainer>
+  <CartItemsContainer>
+    <CartItem
+      item={
+        Object {
+          "id": 1,
+        }
+      }
+      key="1"
+    />
+    <CartItem
+      item={
+        Object {
+          "id": 2,
+        }
+      }
+      key="2"
+    />
+    <CartItem
+      item={
+        Object {
+          "id": 3,
+        }
+      }
+      key="3"
+    />
+  </CartItemsContainer>
+  <CartDropdownButton
+    onClick={[Function]}
+  >
+    GO TO CHECKOUT
+  </CartDropdownButton>
+</CartDropdownContainer>
+`;

@@ -8,7 +8,6 @@ export const CheckoutItemContainer = styled.div`
   padding: 15px 0;
   font-size: 20px;
   align-items: center;
-
   @media screen and (max-width: 800px) {
     font-size: 18px;
   }
@@ -17,7 +16,6 @@ export const CheckoutItemContainer = styled.div`
 export const ImageContainer = styled.div`
   width: 23%;
   padding-right: 15px;
-
   img {
     width: 100%;
     height: 100%;
@@ -26,7 +24,6 @@ export const ImageContainer = styled.div`
 
 export const TextContainer = styled.span`
   width: 23%;
-
   @media screen and (max-width: 800px) {
     width: 22%;
   }
@@ -34,17 +31,19 @@ export const TextContainer = styled.span`
 
 export const QuantityContainer = styled(TextContainer)`
   display: flex;
-
   span {
     margin: 0 10px;
   }
-
   div {
     cursor: pointer;
   }
 `;
 
+QuantityContainer.displayName = 'QuantityContainer';
+
 export const RemoveButtonContainer = styled.div`
   padding-left: 12px;
   cursor: pointer;
 `;
+
+RemoveButtonContainer.displayName = 'RemoveButtonContainer';
