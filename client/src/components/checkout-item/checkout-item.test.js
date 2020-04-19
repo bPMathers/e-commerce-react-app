@@ -13,6 +13,7 @@ beforeEach(() => {
   mockClearItem = jest.fn();
   mockAddItem = jest.fn();
   mockRemoveItem = jest.fn();
+
   const mockProps = {
     cartItem: {
       imageUrl: 'www.imageUrl.com',
@@ -30,6 +31,28 @@ beforeEach(() => {
 
 describe('CheckoutItem component', () => {
   it('should render CheckoutItem component', () => {
+    expect.assertions(1);
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should call removeItem when left arrow is clicked', () => {
+    expect.assertions(1);
+    wrapper.find('QuantityContainer').childAt(0).simulate('click');
+
+    expect(mockRemoveItem).toHaveBeenCalled();
+  });
+
+  it('should call addItem when right arrow is clicked', () => {
+    expect.assertions(1);
+    wrapper.find('QuantityContainer').childAt(2).simulate('click');
+
+    expect(mockAddItem).toHaveBeenCalled();
+  });
+
+  it('should call clearItem when remove button is clicked is clicked', () => {
+    expect.assertions(1);
+    wrapper.find('RemoveButtonContainer').simulate('click');
+
+    expect(mockClearItem).toHaveBeenCalled();
   });
 });
