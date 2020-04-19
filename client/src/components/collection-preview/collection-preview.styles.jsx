@@ -20,6 +20,8 @@ export const TitleContainer = styled.h1`
   }
 `;
 
+TitleContainer.displayName = 'TitleContainer'
+
 export const PreviewContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -30,3 +32,5 @@ export const PreviewContainer = styled.div`
     grid-gap: 15px;
   }
 `;
+
+PreviewContainer.displayName = 'PreviewContainer';

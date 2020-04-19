@@ -50,6 +50,8 @@ export const AddButton = styled(CustomButton)`
   }
 `;
 
+AddButton.displayName = 'AddButton';
+
 export const BackgroundImage = styled.div`
   width: 100%;
   height: 95%;
@@ -58,6 +60,8 @@ export const BackgroundImage = styled.div`
   margin-bottom: 5px;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 `;
+
+BackgroundImage.displayName = 'BackgroundImage'
 
 export const CollectionFooterContainer = styled.div`
   width: 100%;
@@ -72,7 +76,11 @@ export const NameContainer = styled.span`
   margin-bottom: 15px;
 `;
 
+NameContainer.displayName = 'NameContainer';
+
 export const PriceContainer = styled.span`
   width: 10%;
   text-align: right;
 `;
+
+PriceContainer.displayName = 'PriceContainer'
