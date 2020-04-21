@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomButton component should render CustomButton component correctly 1`] = `
+<CustomButtonContainer>
+  mockChildren
+</CustomButtonContainer>
+`;

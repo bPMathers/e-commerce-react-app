@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CollectionsOverview component should render CollectionsOverview component correctly 1`] = `
+<CollectionsOverviewContainer>
+  <withRouter(CollectionPreview)
+    items={Array []}
+    key="1"
+    title="hats"
+  />
+  <withRouter(CollectionPreview)
+    items={Array []}
+    key="2"
+    title="shoes"
+  />
+</CollectionsOverviewContainer>
+`;
